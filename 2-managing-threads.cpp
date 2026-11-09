@@ -230,6 +230,9 @@ namespace ex2
     // note: push_back immediately fails with immovable types, but emplace_back likely fails later when
     // vector expands its capacity and must find a bigger block of contiguous memory
 
+    // vector is also a move-aware container, meaning that instead of deep copying when resizing it uses move semantics
+    
+
 } // namespace ex2
 
 TEST(chapter_2, test_3)
